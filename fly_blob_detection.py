@@ -61,7 +61,7 @@ for i in range(len(r)):
                                       cv2.DRAW_MATCHES_FLAGS_DRAW_RICH_KEYPOINTS)
                                       
                                       
-         coords = np.around(cv2.KeyPoint_convert(keypoints)).astype(int)
+        coords = np.around(cv2.KeyPoint_convert(keypoints)).astype(int)
         diameter = [round(x.size) for x in keypoints]
         
         if len(diameter)==1:
