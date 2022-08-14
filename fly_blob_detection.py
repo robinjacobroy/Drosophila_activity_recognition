@@ -63,8 +63,10 @@ for i in range(len(r)):
                                       
         coords = np.around(cv2.KeyPoint_convert(keypoints)).astype(int)
         diameter = [round(x.size) for x in keypoints]
+        if len(diameter)==0:
+            continue
         
-        if len(diameter)==1:
+        elif len(diameter)==1:
             cutout = orig[coords[0][1]-40+y1:coords[0][1]+40+y1, \
                            coords[0][0]-40+x1:coords[0][0]+40+x1]
         else:
