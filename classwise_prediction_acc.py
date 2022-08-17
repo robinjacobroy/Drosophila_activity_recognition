@@ -37,7 +37,7 @@ for num, i in enumerate(zip(true_labels,predicted_labels)):
         ctr+=1
         occurrence[true_label]+=1
     print(fln, true_label, i[1])
-print("total corrent predictions=", ctr/(num+1))
+print("total correct predictions=", ctr/(num+1))
 
 labels = [x.split('/')[1] for x in test_ds.file_paths]
 for i in set(labels):
