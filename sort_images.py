@@ -1,11 +1,8 @@
 #!mkdir -p ./to_predict/{attempt_copulate,following,licking,wing_song,orientation} 
 import cv2,os,shutil
 import numpy as np
-import argparse
 from glob import glob
 from sys import exit
-import csv
-from pathlib import Path
 from os.path import exists 
 
 par_dir = '/home/robin/Work/fruitfly/to_predict/'
